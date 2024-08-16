@@ -115,6 +115,13 @@ func certSetup(cfg *config.Config) (*certchains.CertificateChains, error) {
 			},
 			&certchains.ClientCertificateSigningRequestInfo{
 				CSRMeta: certchains.CSRMeta{
+					Name:         "kube-proxy",
+					ValidityDays: cryptomaterial.ShortLivedCertificateValidityDays,
+				},
+				UserInfo: &user.DefaultInfo{Name: "system:kube-proxy"},
+			},
+			&certchains.ClientCertificateSigningRequestInfo{
+				CSRMeta: certchains.CSRMeta{
 					Name:         "cluster-policy-controller",
 					ValidityDays: cryptomaterial.ShortLivedCertificateValidityDays,
 				},
@@ -482,6 +489,20 @@ func initKubeconfigs(
 		internalTrustPEM,
 		kcmCertPEM,
 		kcmKeyPEM,
+	); err != nil {
+		return err
+	}
+
+	kubeProxyCertPEM, kubeProxyKeyPEM, err := certChains.GetCertKey("kube-control-plane-signer", "kube-proxy")
+	if err != nil {
+		return err
+	}
+	if err := util.KubeConfigWithClientCerts(
+		cfg.KubeConfigPath(config.KubeProxy),
+		cfg.ApiServer.URL,
+		internalTrustPEM,
+		kubeProxyCertPEM,
+		kubeProxyKeyPEM,
 	); err != nil {
 		return err
 	}

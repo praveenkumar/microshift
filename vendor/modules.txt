@@ -72,6 +72,8 @@ github.com/Microsoft/go-winio/vhd
 ## explicit; go 1.13
 github.com/Microsoft/hcsshim
 github.com/Microsoft/hcsshim/computestorage
+github.com/Microsoft/hcsshim/hcn
+github.com/Microsoft/hcsshim/internal/cni
 github.com/Microsoft/hcsshim/internal/cow
 github.com/Microsoft/hcsshim/internal/hcs
 github.com/Microsoft/hcsshim/internal/hcs/schema1
@@ -84,6 +86,8 @@ github.com/Microsoft/hcsshim/internal/logfields
 github.com/Microsoft/hcsshim/internal/longpath
 github.com/Microsoft/hcsshim/internal/mergemaps
 github.com/Microsoft/hcsshim/internal/oc
+github.com/Microsoft/hcsshim/internal/regstate
+github.com/Microsoft/hcsshim/internal/runhcs
 github.com/Microsoft/hcsshim/internal/safefile
 github.com/Microsoft/hcsshim/internal/timeout
 github.com/Microsoft/hcsshim/internal/vmcompute
@@ -166,6 +170,9 @@ github.com/coreos/go-systemd/v22/journal
 # github.com/cyphar/filepath-securejoin v0.2.4
 ## explicit; go 1.13
 github.com/cyphar/filepath-securejoin
+# github.com/danwinship/knftables v0.0.13
+## explicit; go 1.20
+github.com/danwinship/knftables
 # github.com/davecgh/go-spew v1.1.1
 ## explicit
 github.com/davecgh/go-spew/spew
@@ -437,6 +444,9 @@ github.com/libopenstorage/openstorage/volume
 # github.com/liggitt/tabwriter v0.0.0-20181228230101-89fcab3d43de
 ## explicit
 github.com/liggitt/tabwriter
+# github.com/lithammer/dedent v1.1.0
+## explicit
+github.com/lithammer/dedent
 # github.com/mailru/easyjson v0.7.7
 ## explicit; go 1.12
 github.com/mailru/easyjson/buffer
@@ -454,6 +464,9 @@ github.com/mistifyio/go-zfs
 # github.com/mitchellh/go-wordwrap v1.0.1
 ## explicit; go 1.14
 github.com/mitchellh/go-wordwrap
+# github.com/moby/ipvs v1.1.0
+## explicit; go 1.17
+github.com/moby/ipvs
 # github.com/moby/spdystream v0.2.0
 ## explicit; go 1.13
 github.com/moby/spdystream
@@ -2243,6 +2256,9 @@ k8s.io/kube-openapi/pkg/validation/spec
 k8s.io/kube-openapi/pkg/validation/strfmt
 k8s.io/kube-openapi/pkg/validation/strfmt/bson
 k8s.io/kube-openapi/pkg/validation/validate
+# k8s.io/kube-proxy v0.0.0 => github.com/openshift/kubernetes/staging/src/k8s.io/kube-proxy v0.0.0-20240813132429-4510e9c75113
+## explicit; go 1.21
+k8s.io/kube-proxy/config/v1alpha1
 # k8s.io/kube-scheduler v0.0.0 => github.com/openshift/kubernetes/staging/src/k8s.io/kube-scheduler v0.0.0-20240813132429-4510e9c75113
 ## explicit; go 1.21
 k8s.io/kube-scheduler/config/v1
@@ -2312,6 +2328,7 @@ k8s.io/kubernetes/cmd/kube-controller-manager/app
 k8s.io/kubernetes/cmd/kube-controller-manager/app/config
 k8s.io/kubernetes/cmd/kube-controller-manager/app/options
 k8s.io/kubernetes/cmd/kube-controller-manager/names
+k8s.io/kubernetes/cmd/kube-proxy/app
 k8s.io/kubernetes/cmd/kube-scheduler/app
 k8s.io/kubernetes/cmd/kube-scheduler/app/config
 k8s.io/kubernetes/cmd/kube-scheduler/app/options
@@ -2796,6 +2813,25 @@ k8s.io/kubernetes/pkg/probe/exec
 k8s.io/kubernetes/pkg/probe/grpc
 k8s.io/kubernetes/pkg/probe/http
 k8s.io/kubernetes/pkg/probe/tcp
+k8s.io/kubernetes/pkg/proxy
+k8s.io/kubernetes/pkg/proxy/apis
+k8s.io/kubernetes/pkg/proxy/apis/config
+k8s.io/kubernetes/pkg/proxy/apis/config/scheme
+k8s.io/kubernetes/pkg/proxy/apis/config/v1alpha1
+k8s.io/kubernetes/pkg/proxy/apis/config/validation
+k8s.io/kubernetes/pkg/proxy/config
+k8s.io/kubernetes/pkg/proxy/conntrack
+k8s.io/kubernetes/pkg/proxy/healthcheck
+k8s.io/kubernetes/pkg/proxy/iptables
+k8s.io/kubernetes/pkg/proxy/ipvs
+k8s.io/kubernetes/pkg/proxy/ipvs/ipset
+k8s.io/kubernetes/pkg/proxy/ipvs/util
+k8s.io/kubernetes/pkg/proxy/metaproxier
+k8s.io/kubernetes/pkg/proxy/metrics
+k8s.io/kubernetes/pkg/proxy/nftables
+k8s.io/kubernetes/pkg/proxy/util
+k8s.io/kubernetes/pkg/proxy/util/iptables
+k8s.io/kubernetes/pkg/proxy/winkernel
 k8s.io/kubernetes/pkg/quota/v1/evaluator/core
 k8s.io/kubernetes/pkg/quota/v1/install
 k8s.io/kubernetes/pkg/registry/admissionregistration/mutatingwebhookconfiguration

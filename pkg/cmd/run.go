@@ -210,6 +210,7 @@ func RunMicroshift(cfg *config.Config) error {
 	util.Must(m.AddService(controllers.NewVersionManager(cfg)))
 	util.Must(m.AddService(kustomize.NewKustomizer(cfg)))
 	util.Must(m.AddService(node.NewKubeletServer(cfg)))
+	util.Must(m.AddService(node.NewKubeProxyServer(cfg)))
 	util.Must(m.AddService(loadbalancerservice.NewLoadbalancerServiceController(cfg)))
 	util.Must(m.AddService(controllers.NewKubeStorageVersionMigrator(cfg)))
 	util.Must(m.AddService(controllers.NewClusterID(cfg)))

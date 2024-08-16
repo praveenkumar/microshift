@@ -175,6 +175,8 @@ github.com/creack/pty v1.1.18 h1:n56/Zwd5o6whRC5PMGretI4IdRLlmBXYNjScPaBgsbY=
 github.com/creack/pty v1.1.18/go.mod h1:MOBLtS5ELjhRRrroQr9kyvTxUAFNvYEK993ew/Vr4O4=
 github.com/cyphar/filepath-securejoin v0.2.4 h1:Ugdm7cg7i6ZK6x3xDF1oEu1nfkyfH53EtKeQYTC3kyg=
 github.com/cyphar/filepath-securejoin v0.2.4/go.mod h1:aPGpWjXOXUn2NCNjFvBE6aRxGGx79pTxQpKOJNYHHl4=
+github.com/danwinship/knftables v0.0.13 h1:89Ieiia6MMfXWQF9dyaou1CwBU8h8sHa2Zo3OlY2o04=
+github.com/danwinship/knftables v0.0.13/go.mod h1:OzipaBQqkQAIbVnafTGyHgfFbjWTJecrA7/XNLNMO5E=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
@@ -446,6 +448,8 @@ github.com/mitchellh/go-homedir v1.1.0/go.mod h1:SfyaCUpYCn1Vlf4IUYiD9fPX4A5wJrk
 github.com/mitchellh/go-wordwrap v1.0.1 h1:TLuKupo69TCn6TQSyGxwI1EblZZEsQ0vMlAFQflz0v0=
 github.com/mitchellh/go-wordwrap v1.0.1/go.mod h1:R62XHJLzvMFRBbcrT7m7WgmE1eOyTSsCt+hzestvNj0=
 github.com/mitchellh/mapstructure v1.1.2/go.mod h1:FVVH3fgwuzCH5S8UJGiWEs2h04kUh9fWfEaFds41c1Y=
+github.com/moby/ipvs v1.1.0 h1:ONN4pGaZQgAx+1Scz5RvWV4Q7Gb+mvfRh3NsPS+1XQQ=
+github.com/moby/ipvs v1.1.0/go.mod h1:4VJMWuf098bsUMmZEiD4Tjk/O7mOn3l1PTD3s4OoYAs=
 github.com/moby/spdystream v0.2.0 h1:cjW1zVyyoiM0T7b6UoySUFqzXMoqRckQtXwGPiBhOM8=
 github.com/moby/spdystream v0.2.0/go.mod h1:f7i0iNDQJ059oMTcWxx8MA/zKFIuD/lY+0GqbN2Wy8c=
 github.com/moby/sys/mountinfo v0.6.2 h1:BzJjoreD5BMFNmD9Rus6gdd1pLuecOFPt8wC+Vygl78=
@@ -542,6 +546,8 @@ github.com/openshift/kubernetes/staging/src/k8s.io/kube-aggregator v0.0.0-202408
 github.com/openshift/kubernetes/staging/src/k8s.io/kube-aggregator v0.0.0-20240813132429-4510e9c75113/go.mod h1:4J7wfAzEbaohBbEGIixBHQL5SIyinxnGKUjlwn9L3YQ=
 github.com/openshift/kubernetes/staging/src/k8s.io/kube-controller-manager v0.0.0-20240813132429-4510e9c75113 h1:AqmCG509XWTach+z8MWw8ZTbaUQ8bwXc3W9XBOhMUp8=
 github.com/openshift/kubernetes/staging/src/k8s.io/kube-controller-manager v0.0.0-20240813132429-4510e9c75113/go.mod h1:GzLfPndMG5N4amYe78K2d9Y32Dtdz7IxAsR+jvYNAxM=
+github.com/openshift/kubernetes/staging/src/k8s.io/kube-proxy v0.0.0-20240813132429-4510e9c75113 h1:KeFI3DSkAJfFWMqfpuH1w0SQCeEXW81gbYZ2R4EHgUI=
+github.com/openshift/kubernetes/staging/src/k8s.io/kube-proxy v0.0.0-20240813132429-4510e9c75113/go.mod h1:QSD6bzFz+cUz3lT/feCA7eUoWWsbol2nwl0d72vZqlM=
 github.com/openshift/kubernetes/staging/src/k8s.io/kube-scheduler v0.0.0-20240813132429-4510e9c75113 h1:VerL4rzzzj9td6E9YSiDk8nKg+aWeJaCyEMO6pl/Ehw=
 github.com/openshift/kubernetes/staging/src/k8s.io/kube-scheduler v0.0.0-20240813132429-4510e9c75113/go.mod h1:iCnLhShFPbA6+0cBJHMIC8osA4ukveEZbQweXjn+oXo=
 github.com/openshift/kubernetes/staging/src/k8s.io/kubectl v0.0.0-20240813132429-4510e9c75113 h1:vGDgM4MASAHekmO8AGd/7ireUpIbvmloQmNf8G4+WV0=
